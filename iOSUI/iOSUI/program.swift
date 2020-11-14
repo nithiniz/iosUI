@@ -7,43 +7,74 @@
 //
 
 import Foundation
-struct Pipe{
+
+
+
+
+struct Pipe {
     let name: String
     let length: Float
 }
 
-struct PipesList{
+struct PipesList {
     let pipeType: String
     var pipes: [Pipe]
 }
 
 class Program{
 
+
+    let string = "1.0"
+    var anotherString = "new string"
+    let array: [Any] = ["string", 10, 11.5]
+    let array1: [Int] = [1, 2, 3]
+
+    var optionalString: String?
+
     init(){
 
-        var pipeTypes: [PipesList] = [
+        anotherString = "changed string"
+        print(optionalString) // -> Optional(nil)
 
-            PipesList(pipeType: "PVC Pipes",pipes: [
-                Pipe(name: "The blue pipe", length: 12),
-                Pipe(name: "The red pipe", length: 15),
-                Pipe(name: "The silver pipe", length: 6),
-                Pipe(name: "The green pipe", length: 52)
-            ]),
+        /*
+         unwrap
 
-            PipesList(pipeType: "Iron Pipes",pipes: [
-                Pipe(name: "The gold pipe", length: 9),
-                Pipe(name: "The orange pipe", length: 115),
-                Pipe(name: "The pink pipe", length: 1),
-            ]),
+         forceful
+         conditional
+         */
+        print(optionalString!) // -> crash
 
-            PipesList(pipeType: "Chrome Pipes",pipes: [
-                Pipe(name: "The grey pipe", length: 12),
-                Pipe(name: "The black pipe", length: 15),
-                Pipe(name: "The white pipe", length: 19),
-                Pipe(name: "The brown pipe", length: 60),
-                Pipe(name: "The peach pipe", length: 16)
-            ])
-        ]
+        // optionalString = "new"
+
+        print(optionalString ?? anotherString)
+
+        if let unwrapped = optionalString {
+            print(unwrapped)
+        }
+
+        let firstItem = PipesList(pipeType: "PVC Pipes",pipes: [
+            Pipe(name: "The blue pipe", length: 12),
+            Pipe(name: "The red pipe", length: 15),
+            Pipe(name: "The silver pipe", length: 6),
+            Pipe(name: "The green pipe", length: 52)
+        ])
+        let secondItem =  PipesList(pipeType: "Iron Pipes",pipes: [
+            Pipe(name: "The gold pipe", length: 9),
+            Pipe(name: "The orange pipe", length: 115),
+            Pipe(name: "The pink pipe", length: 1),
+        ])
+        let thirdItem = PipesList(pipeType: "Chrome Pipes",pipes: [
+            Pipe(name: "The grey pipe", length: 12),
+            Pipe(name: "The black pipe", length: 15),
+            Pipe(name: "The white pipe", length: 19),
+            Pipe(name: "The brown pipe", length: 60),
+            Pipe(name: "The peach pipe", length: 16)
+        ])
+
+       let newPipelist: PipesList = PipesList(pipeType: "some type", pipes: [Pipe(name: "pipe name", length: 10), Pipe(name: "another pipe", length: 12
+        )])
+
+        var pipeTypes: [PipesList] = [firstItem, secondItem, thirdItem, newPipelist]
 
         removeTheSmallPipes(pipesList: &pipeTypes)
 
@@ -60,20 +91,18 @@ class Program{
 
     func removeTheSmallPipes(pipesList: inout [PipesList]){
 
-        for var pipeTypes in pipesList
-        {
+        for var pipeTypes in pipesList {
             var index = 0
-        var pipes = pipeTypes.pipes
+            var pipes = pipeTypes.pipes
             for pipe in pipes {
-                if pipe.length < 19.0
-                {
+                if pipe.length < 19.0 {
                     pipes.remove(at: index)
 
-               }
-        index += 1
+                }
+                index += 1
 
             }
-        pipeTypes.pipes = pipes
+            pipeTypes.pipes = pipes
         }
     }
 
