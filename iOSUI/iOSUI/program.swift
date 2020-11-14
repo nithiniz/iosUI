@@ -1,0 +1,111 @@
+//
+//  program.swift
+//  iOSUI
+//
+//  Created by Nithin Nizam on 11/11/20.
+//  Copyright © 2020 Nithin. All rights reserved.
+//
+
+import Foundation
+
+
+
+
+struct Pipe {
+    let name: String
+    let length: Float
+}
+
+struct PipesList {
+    let pipeType: String
+    var pipes: [Pipe]
+}
+
+class Program{
+
+
+    let string = "1.0"
+    var anotherString = "new string"
+    let array: [Any] = ["string", 10, 11.5]
+    let array1: [Int] = [1, 2, 3]
+
+    var optionalString: String?
+
+    init(){
+
+        anotherString = "changed string"
+        print(optionalString) // -> Optional(nil)
+
+        /*
+         unwrap
+
+         forceful
+         conditional
+         */
+      //  print(optionalString!) // -> crash
+
+        // optionalString = "new"
+
+        print(optionalString ?? anotherString)
+
+        if let unwrapped = optionalString {
+            print(unwrapped)
+        }
+
+        let firstItem = PipesList(pipeType: "PVC Pipes",pipes: [
+            Pipe(name: "The blue pipe", length: 12),
+            Pipe(name: "The red pipe", length: 15),
+            Pipe(name: "The silver pipe", length: 6),
+            Pipe(name: "The green pipe", length: 52)
+        ])
+        let secondItem =  PipesList(pipeType: "Iron Pipes",pipes: [
+            Pipe(name: "The gold pipe", length: 9),
+            Pipe(name: "The orange pipe", length: 115),
+            Pipe(name: "The pink pipe", length: 1),
+        ])
+        let thirdItem = PipesList(pipeType: "Chrome Pipes",pipes: [
+            Pipe(name: "The grey pipe", length: 12),
+            Pipe(name: "The black pipe", length: 15),
+            Pipe(name: "The white pipe", length: 19),
+            Pipe(name: "The brown pipe", length: 60),
+            Pipe(name: "The peach pipe", length: 16)
+        ])
+
+       let newPipelist: PipesList = PipesList(pipeType: "some type", pipes: [Pipe(name: "pipe name", length: 10), Pipe(name: "another pipe", length: 12
+        )])
+
+        var pipeTypes: [PipesList] = [firstItem, secondItem, thirdItem, newPipelist]
+
+        removeTheSmallPipes(pipesList: &pipeTypes)
+
+        for pipeList in pipeTypes{
+            print("PipesList: \(pipeList.pipeType)")
+
+            for pipe in pipeList.pipes{
+                print("\(pipe.name), length: \(pipe.length)")
+            }
+        }
+
+
+    }
+
+    func removeTheSmallPipes(pipesList: inout [PipesList]){
+
+        for var pipeTypes in pipesList {
+            var index = 0
+            var pipes = pipeTypes.pipes
+            for pipe in pipes {
+                if pipe.length < 19.0 {
+                    pipes.remove(at: index)
+
+                }
+                index += 1
+
+            }
+            pipeTypes.pipes = pipes
+        }
+    }
+
+
+}
+
