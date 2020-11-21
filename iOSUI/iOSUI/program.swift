@@ -21,8 +21,26 @@ struct PipesList {
     var pipes: [Pipe]
 }
 
+struct WebSearchDucIDs {
+
+    let webSearchResponse = "webSearchDucs#webSearchResponse"
+}
+
 class Program{
 
+    func testSiri() {
+//        TestCaseStartState.ask(self,
+//                               utterance: "nascar schedule",
+//                               validate:(allOf: [WebSearchDucIDs.webSearchResponse]),
+//                               skipValidateSnippet(),
+//                               done())
+//
+//        TestCaseStartState.ask(self,
+//                               utterance: "nascar schedule",
+//                               validate:(allOf: ["webSearchDucs#webSearchResponse"]),
+//                               skipValidateSnippet(),
+//                               done())
+    }
 
     let string = "1.0"
     var anotherString = "new string"
