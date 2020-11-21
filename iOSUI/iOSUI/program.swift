@@ -23,10 +23,33 @@ struct PipesList {
     var pipes: [Pipe]
 }
 
+struct WebSearchDucIDs {
+
+    let webSearchResponse = "webSearchDucs#webSearchResponse"
+}
+
 class Program{
+
 
     let classNew = NewClass()
     let string = classNew.applicationOne
+
+    func testSiri() {
+//        TestCaseStartState.ask(self,
+//                               utterance: "nascar schedule",
+//                               validate:(allOf: [WebSearchDucIDs.webSearchResponse]),
+//                               skipValidateSnippet(),
+//                               done())
+//
+//        TestCaseStartState.ask(self,
+//                               utterance: "nascar schedule",
+//                               validate:(allOf: ["webSearchDucs#webSearchResponse"]),
+//                               skipValidateSnippet(),
+//                               done())
+    }
+
+    let string = "1.0"
+
     var anotherString = "new string"
     let array: [Any] = ["string", 10, 11.5]
     let array1: [Int] = [1, 2, 3]
