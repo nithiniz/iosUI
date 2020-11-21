@@ -14,6 +14,8 @@ import Foundation
 struct Pipe {
     let name: String
     let length: Float
+    var type: Character
+    var possible: Bool
 }
 
 struct PipesList {
@@ -23,19 +25,20 @@ struct PipesList {
 
 class Program{
 
-
-    let string = "1.0"
+    let classNew = NewClass()
+    let string = classNew.applicationOne
     var anotherString = "new string"
     let array: [Any] = ["string", 10, 11.5]
     let array1: [Int] = [1, 2, 3]
-
+    var newPipe = Pipe(name: "Raja", length: 2.2)
     var optionalString: String?
+    let sportsArray = [SportsDucIDs.leagueScheduleComment, teamGameScheduleComent]
 
     init(){
 
         anotherString = "changed string"
         print(optionalString) // -> Optional(nil)
-
+        classNew.appTest()
         /*
          unwrap
 
