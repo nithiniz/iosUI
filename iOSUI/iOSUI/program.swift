@@ -28,15 +28,19 @@ struct WebSearchDucIDs {
     let webSearchResponse = "webSearchDucs#webSearchResponse"
 }
 
-class Program{
+class Program {
 
 
     let classNew = NewClass()
     let string = classNew.applicationOne
 
     func testSiri() {
+
+      //  let utterance = "nascar schedule"    // "nascar schedule"
+//        let utterance: String? = "nascar schedule" // "Optional(nascar schedule)"
+//
 //        TestCaseStartState.ask(self,
-//                               utterance: "nascar schedule",
+//                               utterance: utterance ?? "",
 //                               validate:(allOf: [WebSearchDucIDs.webSearchResponse]),
 //                               skipValidateSnippet(),
 //                               done())
@@ -54,10 +58,38 @@ class Program{
     let array: [Any] = ["string", 10, 11.5]
     let array1: [Int] = [1, 2, 3]
     var newPipe = Pipe(name: "Raja", length: 2.2)
+    var listOfIntegers: [Int]?
+
     var optionalString: String?
     let sportsArray = [SportsDucIDs.leagueScheduleComment, teamGameScheduleComent]
 
-    init(){
+    required init(_ someString: String) {
+
+        optionalString = someString
+        listOfIntegers?.append(1)
+        listOfIntegers?.append(2)
+        listOfIntegers?.append(3)
+
+        print(array)
+        print(listOfIntegers)
+        print(listOfIntegers!)
+
+        var unwrapped = optionalString!
+        unwrapped = optionalString ?? "default value"
+        if let abc = optionalString {
+            print(abc)
+        }
+        if optionalString == nil {
+            unwrapped = "default value"
+        }
+        else {
+            unwrapped = optionalString!
+        }
+        // "Optional(1,2,3)"
+        //  "1,2,3"
+    }
+
+    func calculate(){
 
         anotherString = "changed string"
         print(optionalString) // -> Optional(nil)
