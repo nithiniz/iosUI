@@ -9,6 +9,25 @@
 import Foundation
 
 
+/*
+
+ git status
+ git add
+ git restore
+ git restore --staged
+ git branch
+ git checkout
+ git checkout -b <branch name>
+ git checkout <commit id>
+ git stash
+ git stash pop
+ git commit -m
+ git commit -am
+ git push origin <branch name>
+ git pull origin <branch name>
+ 
+
+ */
 
 
 struct Pipe {
