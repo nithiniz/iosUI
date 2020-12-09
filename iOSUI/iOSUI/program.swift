@@ -14,8 +14,8 @@ import Foundation
 struct Pipe {
     let name: String
     let length: Float
-    var type: Character
-    var possible: Bool
+//    var type: Character
+//    var possible: Bool
 }
 
 struct PipesList {
@@ -31,8 +31,8 @@ struct WebSearchDucIDs {
 class Program{
 
 
-    let classNew = NewClass()
-    let string = classNew.applicationOne
+//    let classNew = NewClass()
+//    let string = classNew.applicationOne
 
     func testSiri() {
 //        TestCaseStartState.ask(self,
@@ -55,13 +55,13 @@ class Program{
     let array1: [Int] = [1, 2, 3]
     var newPipe = Pipe(name: "Raja", length: 2.2)
     var optionalString: String?
-    let sportsArray = [SportsDucIDs.leagueScheduleComment, teamGameScheduleComent]
+  //  let sportsArray = [SportsDucIDs.leagueScheduleComment, teamGameScheduleComent]
 
     init(){
 
         anotherString = "changed string"
         print(optionalString) // -> Optional(nil)
-        classNew.appTest()
+  //      classNew.appTest()
         /*
          unwrap
 
@@ -71,6 +71,7 @@ class Program{
       //  print(optionalString!) // -> crash
 
         // optionalString = "new"
+        
 
         print(optionalString ?? anotherString)
 
@@ -111,10 +112,17 @@ class Program{
                 print("\(pipe.name), length: \(pipe.length)")
             }
         }
-
+//addNewOne()
+        _ = Program().addNewOne()
 
     }
 
+    
+    func addNewOne() -> String {
+        return ""
+    }
+    
+    
     func removeTheSmallPipes(pipesList: inout [PipesList]){
 
         for var pipeTypes in pipesList {
@@ -134,4 +142,5 @@ class Program{
 
 
 }
+
 
