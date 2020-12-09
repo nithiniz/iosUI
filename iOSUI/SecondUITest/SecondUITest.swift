@@ -49,7 +49,7 @@ class SecondUITest: XCTestCase {
         }
     
     
-    
+    //just for trail purpose.......
     func testAdjustingASlider() {
         let app = XCUIApplication()
         app.launch()
@@ -71,44 +71,45 @@ class SecondUITest: XCTestCase {
         
     }
     
-    func testOnOff() {
-        let app = XCUIApplication()
-        app.launch()
-        app.buttons["Button1"].tap()
-        app.switches["switch"].tap()
+        func testOnOff() {
+            let app = XCUIApplication()
+            app.launch()
+            app.buttons["Button1"].tap()
+            app.switches["switch"].tap()
+            
+            
+            
+        }
+        
+        func testProgressView() {
+           // let app = XCUIApplication()
+            app.launch()
+            app/*@START_MENU_TOKEN@*/.staticTexts["Item 1"]/*[[".buttons[\"Item 1\"].staticTexts[\"Item 1\"]",".buttons[\"Button1\"].staticTexts[\"Item 1\"]",".staticTexts[\"Item 1\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+            let progressView = app.progressIndicators["progress"]
+            XCTAssert(progressView.exists)
+            
+            let slider = app.sliders["slider"]
+            slider.tap()
+           
+            slider.adjust(toNormalizedSliderPosition: 0.8)
+            
+            sleep(2)
+            let progressValue = progressView.value as? Float
+            XCTAssert(progressValue == 0.2)
+            
+        }
         
         
         
-    }
-    
-    func testProgressView() {
-       // let app = XCUIApplication()
-        app.launch()
-        app/*@START_MENU_TOKEN@*/.staticTexts["Item 1"]/*[[".buttons[\"Item 1\"].staticTexts[\"Item 1\"]",".buttons[\"Button1\"].staticTexts[\"Item 1\"]",".staticTexts[\"Item 1\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        let progressView = app.progressIndicators["progress"]
-        XCTAssert(progressView.exists)
         
-        let slider = app.sliders["slider"]
-        slider.tap()
-       
-        slider.adjust(toNormalizedSliderPosition: 0.8)
         
-        sleep(2)
-        let progressValue = progressView.value as? Float
-        XCTAssert(progressValue == 0.2)
-        
-    }
-    
-    
-    
-    
-    
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+        func testLaunchPerformance() throws {
+            if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+                // This measures how long it takes to launch your application.
+                measure(metrics: [XCTApplicationLaunchMetric()]) {
+                    XCUIApplication().launch()
+                }
         }
     }
 }
+
