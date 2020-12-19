@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import iOSUI
 
 class SecondUITest: XCTestCase {
     let app = XCUIApplication()
@@ -24,19 +25,35 @@ class SecondUITest: XCTestCase {
        
     }
 
+    func testExampleNew() {
+
+        let slider = XCUIApplication().sliders["slider"]
+        slider.tap()
+        slider.swipeRight()
+        slider.tap()
+        slider.swipeLeft()
+
+    }
+
     func testExample() {
 
         let app = XCUIApplication()
         app.launch()
 
         //XCUIApplication().textFields["Button1"]
-
         //XCUIApplication().textFields["Button1"].typeText("Vegetables")
         app.buttons["Button1"].tap()
         app.navigationBars["iOSUI.SecondView"].buttons["Back"].tap()
        
         app.buttons["Button2"].tap()
         }
+
+    func testProgram() {
+
+        let program = Program("")
+        program.newFunc()
+        XCTAssertEqual(program.anotherString, "changed string", "value not matching")
+    }
 
     func testRecord() {
         
@@ -45,9 +62,16 @@ class SecondUITest: XCTestCase {
         app/*@START_MENU_TOKEN@*/.staticTexts["Item 1"]/*[[".buttons[\"Item 1\"].staticTexts[\"Item 1\"]",".buttons[\"Button1\"].staticTexts[\"Item 1\"]",".staticTexts[\"Item 1\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["iOSUI.SecondView"].buttons["Back"].tap()
         app/*@START_MENU_TOKEN@*/.staticTexts["Item 2"]/*[[".buttons[\"Item 2\"].staticTexts[\"Item 2\"]",".buttons[\"Button2\"].staticTexts[\"Item 2\"]",".staticTexts[\"Item 2\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        
+    }
+
+    func testUI(someStaticString: StaticString = #file) {
+
+        XCTContext.runActivity(named: "activity name") { _ in
+
+            XCTAssertTrue(app/*@START_MENU_TOKEN@*/.staticTexts["Item 2"]/*[[".buttons[\"Item 2\"].staticTexts[\"Item 2\"]",".buttons[\"Button2\"].staticTexts[\"Item 2\"]",".staticTexts[\"Item 2\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.exists, "Can't find the item 2", file: someStaticString, line: 54)
+
         }
-    
+    }
     
     
     func testAdjustingASlider() {
@@ -76,9 +100,6 @@ class SecondUITest: XCTestCase {
         app.launch()
         app.buttons["Button1"].tap()
         app.switches["switch"].tap()
-        
-        
-        
     }
     
     func testProgressView() {
