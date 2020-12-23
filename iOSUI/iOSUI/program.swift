@@ -16,15 +16,18 @@ import Foundation
  Desktop $: cd iosUI
  iosUI $:
 
- git status
- git add
- git restore
- git restore --staged
- git commit -m
- git push origin <branch name>
- git pull origin <branch name>
- git stash
- git stash pop
+ git status // gives the difference between the current code and local git version
+            3 sections -
+                    Changes staged for commit - Files knowm by git that are ready for commit (Section 1)
+                    Changes not staged for commit - Files known by git, but not going to be commited (Section 2)
+                    Untracked files - Files that are unknown to git within the git folder (Section 3)
+ git add <file path> //adds the file to section 1 from section 2 and 3
+ git restore --staged //Moves a file from section 1 to section 2 or 3 based on the last status
+ git commit -m "message" //Commits the files in section 1
+ git push origin <branch name> //Pushes the changes to the specified branch
+ git pull origin <branch name> //Pulls the chnages from the specified branch
+ git stash //Removes all local changes and goes back to last git version/commit
+ git stash pop //Brings back the changes from previous stash
 
  git branch <branch name> //create a branch
  git checkout <branch name> //switch to a branch
