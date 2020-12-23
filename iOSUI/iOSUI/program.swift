@@ -11,21 +11,37 @@ import Foundation
 
 /*
 
+ git clone <url>
+ Desktop $: git clone https://github.com/nithiniz/iosUI.git
+ Desktop $: cd iosUI
+ iosUI $:
+
  git status
  git add
  git restore
  git restore --staged
- git branch
- git checkout
- git checkout -b <branch name>
- git checkout <commit id>
- git stash
- git stash pop
  git commit -m
- git commit -am
  git push origin <branch name>
  git pull origin <branch name>
- 
+ git stash
+ git stash pop
+
+ git branch <branch name> //create a branch
+ git checkout <branch name> //switch to a branch
+
+ git checkout -b <branch name> //creates a new branch and switch to it
+ git checkout <commit id> // moves to a particular commit, will not be in a branch
+
+ git branch -D <branch name> //Deletes a branch on local repository
+
+ git commit -am // commits all tracked files
+ git commit -am "updated 2 files"
+
+ git add file2.txt
+ git add fileForNewBranch.txt
+
+ git commit -m "pdated 2 files" //commits only the selected/added files
+
 
  */
 
@@ -33,8 +49,6 @@ import Foundation
 struct Pipe {
     let name: String
     let length: Float
-//    var type: Character
-//    var possible: Bool
 }
 
 struct PipesList{
@@ -47,29 +61,48 @@ struct WebSearchDucIDs {
     let webSearchResponse = "webSearchDucs#webSearchResponse"
 }
 
+struct SportsSearchDucIDs {
+
+    let sportsSearchResponse = "sportsSearchDucs#sportsSearchResponse"
+    let sportsScheduleResponse = "sportsSearchDucs#sportsScheduleResponse"
+}
+
 class Program {
+    
+   // let classNew = NewClass()
+ //   let string = classNew.applicationOne
+
+    var applicationVersion = "1.1"
 
 
-//    let classNew = NewClass()
-//    let string = classNew.applicationOne
+    var someFuncton: () -> ()?
+    var aString: String?
+
+    var valueChanged: ((Bool)->())?
+
 
     func testSiri() {
 
+        applicationVersion = "2.0"
+
       //  let utterance = "nascar schedule"    // "nascar schedule"
-//        let utterance: String? = "nascar schedule" // "Optional(nascar schedule)"
-//
+        let utterance: String? = "nascar schedule" // "Optional(nascar schedule)"
+
 //        TestCaseStartState.ask(self,
 //                               utterance: utterance ?? "",
 //                               validate:(allOf: [WebSearchDucIDs.webSearchResponse]),
 //                               skipValidateSnippet(),
 //                               done())
-//
+
 //        TestCaseStartState.ask(self,
 //                               utterance: "nascar schedule",
 //                               validate:(allOf: ["webSearchDucs#webSearchResponse"]),
 //                               skipValidateSnippet(),
 //                               done())
+
     }
+
+
 
     let string = "1.0"
 
@@ -80,19 +113,30 @@ class Program {
     var listOfIntegers: [Int]?
 
     var optionalString: String?
-  //  let sportsArray = [SportsDucIDs.leagueScheduleComment, teamGameScheduleComent]
+ //   let sportsArray = [SportsDucIDs.leagueScheduleComment, teamGameScheduleComent]
+    var nonOptionalString: String = "I am non optional"
+    var newString: String? = "I am optional"
 
     required init(_ someString: String) {
 
         optionalString = someString
+        newString = nil
         listOfIntegers?.append(1)
         listOfIntegers?.append(2)
         listOfIntegers?.append(3)
 
-        print(array)
-        print(listOfIntegers)
-        print(listOfIntegers!)
+       //  _ = string.toInt()
 
+        someFuncton = {
+            print("called this function")
+        }
+
+        valueChanged = { (value) in
+
+            print("value -- \(value)")
+        }
+        print(array)
+       
         var unwrapped = optionalString!
         unwrapped = optionalString ?? "default value"
         if let abc = optionalString {
@@ -104,15 +148,21 @@ class Program {
         else {
             unwrapped = optionalString!
         }
+        someFuncton()
+        calculate()
+        newFunc()
         // "Optional(1,2,3)"
         //  "1,2,3"
     }
 
-    func calculate(){
-
+    func newFunc() {
         anotherString = "changed string"
+    }
+    
+    func calculate() {
+
         print(optionalString) // -> Optional(nil)
-  //      classNew.appTest()
+      //  classNew.appTest()
         /*
          unwrap
 
@@ -195,5 +245,3 @@ class Program {
 
 
 }
-
-
