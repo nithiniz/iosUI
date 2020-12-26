@@ -25,7 +25,7 @@ import Foundation
  git restore --staged //Moves a file from section 1 to section 2 or 3 based on the last status
  git commit -m "message" //Commits the files in section 1
  git push origin <branch name> //Pushes the changes to the specified branch
- git pull origin <branch name> //Pulls the chnages from the specified branch
+ git pull origin <branch name> //Pulls the changes from the specified branch
  git stash //Removes all local changes and goes back to last git version/commit
  git stash pop //Brings back the changes from previous stash
 
@@ -43,7 +43,7 @@ import Foundation
  git add file2.txt
  git add fileForNewBranch.txt
 
- git commit -m "pdated 2 files" //commits only the selected/added files
+ git commit -m "updated 2 files" //commits only the selected/added files
 
 
  */
@@ -89,14 +89,10 @@ class Program {
         applicationVersion = "2.0"
 
       //  let utterance = "nascar schedule"    // "nascar schedule"
-        let utterance: String? = "nascar schedule" // "Optional(nascar schedule)"
-
-//        TestCaseStartState.ask(self,
-//                               utterance: utterance ?? "",
-//                               validate:(allOf: [WebSearchDucIDs.webSearchResponse]),
-//                               skipValidateSnippet(),
-//                               done())
-
+//        let utterance: String? = "nascar schedule" // "Optional(nascar schedule)"
+//
+//
+//
 //        TestCaseStartState.ask(self,
 //                               utterance: "nascar schedule",
 //                               validate:(allOf: ["webSearchDucs#webSearchResponse"]),
@@ -105,6 +101,29 @@ class Program {
 
     }
 
+
+//    func test_clientPlayMusic() {
+//        TestCaseStartState.ask(self,
+//                               utterance: "Play Music",
+//                               validate:(allOf: ["client#interstitialInitial"]),
+//                               skipValidateSnippet(),
+//                               done())
+//        sleep(10)
+//        TestCaseStartState.ask(self,
+//                               utterance: "Skip the song",
+//                               validate:(allOf: ["client#interstitialInitial"]),
+//                               skipValidateSnippet(),
+//                               done())
+//
+//    }
+
+//    func test_clientPlayPlaylist() {
+//        TestCaseStartState.ask(self,
+//                               utterance: "Play fifth song in my library",
+//                               .validate:(allOf: ["client#interstitialInitial"]),
+//                               .skipValidateSnippet(),
+//                               .done())
+//    }
 
 
     let string = "1.0"
@@ -217,7 +236,7 @@ class Program {
             }
         }
 //addNewOne()
-        _ = Program().addNewOne()
+        _ = Program("").addNewOne()
 
     }
 
