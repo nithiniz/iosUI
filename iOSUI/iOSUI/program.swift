@@ -11,22 +11,60 @@ import Foundation
 
 /*
 
- git status
- git add
- git restore
- git restore --staged
- git branch
- git checkout
- git checkout -b <branch name>
- git checkout <commit id>
- git stash
- git stash pop
- git commit -m
- git commit -am
- git push origin <branch name>
- git pull origin <branch name>
- 
+ git clone <url>
+ Desktop $: git clone https://github.com/nithiniz/iosUI.git
+ Desktop $: cd iosUI
+ iosUI $:
 
+ git status // gives the difference between the current code and local git version
+            3 sections -
+                    Changes staged for commit - Files knowm by git that are ready for commit (Section 1)
+                    Changes not staged for commit - Files known by git, but not going to be commited (Section 2)
+                    Untracked files - Files that are unknown to git within the git folder (Section 3)
+ git add <file path> //adds the file to section 1 from section 2 and 3
+ git restore --staged //Moves a file from section 1 to section 2 or 3 based on the last status
+ git commit -m "message" //Commits the files in section 1
+
+ git commit -am // commits all tracked files
+ git commit -am "updated 2 files"
+
+ git add file2.txt
+ git add fileForNewBranch.txt
+
+ git commit -m "updated 2 files" //commits only the selected/added files
+
+ git push origin <branch name> //Pushes the changes to the specified branch
+ git pull origin <branch name> //Pulls the changes from the specified branch
+
+ git stash //Removes all local changes and goes back to last git version/commit
+ git stash pop //Brings back the changes from previous stash
+
+ git branch <branch name> //create a branch
+ git checkout <branch name> //switch to a branch
+
+ git checkout -b <branch name> //creates a new branch and switch to it
+ git checkout <commit id> // moves to a particular commit, will not be in a branch
+ git branch -D <branch name> //Deletes a branch on local repository
+
+{
+ git rebase <branch name>
+
+ git status -> make sure working tree is clean
+ git checkout master -> switch to your base branch
+ git pull origin master -> pull changes from remote for your base branch
+ git checkout <your branch> -? switch back to your branch
+ git rebase master
+
+// if conflict
+ git mergetool
+ <return>
+ fix conflict -> save merge - quit file merge
+ git rebase --continue
+ //
+
+ git push -f origin branch1
+
+ }
  */
 
 
@@ -196,4 +234,17 @@ class Program {
 
 }
 
+/*
 
+ some text from branch 2
+
+ some text from branch 1
+
+ some text from branch 2
+ some text from branch 1
+
+ some text from branch 1
+ some text from branch 2
+
+neither
+ */
