@@ -17,6 +17,7 @@
 		5968BAA2255BC4ED0000BFA2 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5968BAA1255BC4ED0000BFA2 /* Program.swift */; };
 		8B5AB99025622FDC000A4DEC /* NewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AB98F25622FDC000A4DEC /* NewClass.swift */; };
 		8B87F3F12558519F00B59EDF /* SecondUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87F3F02558519F00B59EDF /* SecondUITest.swift */; };
+		8B914E84259A7ABE00D3B669 /* TestPhase1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E83259A7ABE00D3B669 /* TestPhase1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8B87F3EE2558519F00B59EDF /* SecondUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B87F3F02558519F00B59EDF /* SecondUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUITest.swift; sourceTree = "<group>"; };
 		8B87F3F22558519F00B59EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B914E83259A7ABE00D3B669 /* TestPhase1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPhase1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		5931A2352558095300F3A73A = {
 			isa = PBXGroup;
 			children = (
+				8B914E82259A7A9100D3B669 /* BikeTest */,
 				5931A2402558095300F3A73A /* iOSUI */,
 				8B87F3EF2558519F00B59EDF /* SecondUITest */,
 				5931A23F2558095300F3A73A /* Products */,
@@ -106,6 +109,14 @@
 				8B87F3F22558519F00B59EDF /* Info.plist */,
 			);
 			path = SecondUITest;
+			sourceTree = "<group>";
+		};
+		8B914E82259A7A9100D3B669 /* BikeTest */ = {
+			isa = PBXGroup;
+			children = (
+				8B914E83259A7ABE00D3B669 /* TestPhase1.swift */,
+			);
+			path = BikeTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				5931A2462558095300F3A73A /* ViewController.swift in Sources */,
 				8B5AB99025622FDC000A4DEC /* NewClass.swift in Sources */,
 				5931A2422558095300F3A73A /* AppDelegate.swift in Sources */,
+				8B914E84259A7ABE00D3B669 /* TestPhase1.swift in Sources */,
 				5931A2442558095300F3A73A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
