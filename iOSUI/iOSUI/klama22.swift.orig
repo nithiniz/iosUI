@@ -8,6 +8,9 @@
 
 import Foundation
 
+<<<<<<< HEAD
+
+=======
 //
 //  klama22.swift
 //  iOSUI
@@ -32,3 +35,4 @@ import Foundation
 //  Created by Utsav Shrestha on 12/27/20.
 //  Copyright © 2020 Nithin. All rights reserved.
 //
+>>>>>>> Added more comments
