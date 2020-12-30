@@ -17,9 +17,11 @@
 		5968BAA2255BC4ED0000BFA2 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5968BAA1255BC4ED0000BFA2 /* Program.swift */; };
 		8B5AB99025622FDC000A4DEC /* NewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AB98F25622FDC000A4DEC /* NewClass.swift */; };
 		8B87F3F12558519F00B59EDF /* SecondUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87F3F02558519F00B59EDF /* SecondUITest.swift */; };
+<<<<<<< HEAD
+		8B914E84259A7ABE00D3B669 /* TestPhase1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E83259A7ABE00D3B669 /* TestPhase1.swift */; };
+=======
 		8B914E6B2598FADA00D3B669 /* klama22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E6A2598FADA00D3B669 /* klama22.swift */; };
-		8B914E84259A7ABE00D3B669 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		8B914E8C259D0BBB00D3B669 /* Seattle123.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E8B259D0BBB00D3B669 /* Seattle123.swift */; };
+>>>>>>> 73be96157cbf17384e1b533096afa3a13963d33b
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,11 @@
 		8B87F3EE2558519F00B59EDF /* SecondUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B87F3F02558519F00B59EDF /* SecondUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUITest.swift; sourceTree = "<group>"; };
 		8B87F3F22558519F00B59EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		8B914E83259A7ABE00D3B669 /* TestPhase1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPhase1.swift; sourceTree = "<group>"; };
+=======
 		8B914E6A2598FADA00D3B669 /* klama22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = klama22.swift; sourceTree = "<group>"; };
-		8B914E8B259D0BBB00D3B669 /* Seattle123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seattle123.swift; sourceTree = "<group>"; };
+>>>>>>> 73be96157cbf17384e1b533096afa3a13963d33b
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +107,6 @@
 				5931A24C2558095300F3A73A /* LaunchScreen.storyboard */,
 				5931A24F2558095300F3A73A /* Info.plist */,
 				8B914E6A2598FADA00D3B669 /* klama22.swift */,
-				8B914E8B259D0BBB00D3B669 /* Seattle123.swift */,
 			);
 			path = iOSUI;
 			sourceTree = "<group>";
@@ -119,6 +123,7 @@
 		8B914E82259A7A9100D3B669 /* BikeTest */ = {
 			isa = PBXGroup;
 			children = (
+				8B914E83259A7ABE00D3B669 /* TestPhase1.swift */,
 			);
 			path = BikeTest;
 			sourceTree = "<group>";
@@ -224,14 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B914E8C259D0BBB00D3B669 /* Seattle123.swift in Sources */,
 				5931A25825580B1400F3A73A /* SecondViewController.swift in Sources */,
 				5968BAA2255BC4ED0000BFA2 /* Program.swift in Sources */,
 				8B914E6B2598FADA00D3B669 /* klama22.swift in Sources */,
 				5931A2462558095300F3A73A /* ViewController.swift in Sources */,
 				8B5AB99025622FDC000A4DEC /* NewClass.swift in Sources */,
 				5931A2422558095300F3A73A /* AppDelegate.swift in Sources */,
-				8B914E84259A7ABE00D3B669 /* (null) in Sources */,
+				8B914E84259A7ABE00D3B669 /* TestPhase1.swift in Sources */,
 				5931A2442558095300F3A73A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
