@@ -127,10 +127,6 @@ class Program {
         listOfIntegers?.append(2)
         listOfIntegers?.append(3)
 
-        print(array)
-        print(listOfIntegers)
-        print(listOfIntegers!)
-
         var unwrapped = optionalString!
         unwrapped = optionalString ?? "default value"
         if let abc = optionalString {
@@ -202,7 +198,7 @@ class Program {
             }
         }
 //addNewOne()
-        _ = Program().addNewOne()
+        // _ = Program().addNewOne()
 
     }
 

@@ -116,7 +116,7 @@ class SecondUITest: XCTestCase {
         
         sleep(2)
         let progressValue = progressView.value as? Float
-        XCTAssert(progressValue == 0.2)
+        XCTAssert(app.staticTexts[ABC.file].exists)
 
     }
     
