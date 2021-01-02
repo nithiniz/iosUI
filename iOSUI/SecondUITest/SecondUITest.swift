@@ -50,9 +50,14 @@ class SecondUITest: XCTestCase {
 
     func testProgram() {
 
-        let program = Program("")
-        program.newFunc()
-        XCTAssertEqual(program.anotherString, "changed string", "value not matching")
+        let app = XCUIApplication()
+        app/*@START_MENU_TOKEN@*/.staticTexts["Item 1"]/*[[".buttons[\"Item 1\"].staticTexts[\"Item 1\"]",".buttons[\"Button1\"].staticTexts[\"Item 1\"]",".staticTexts[\"Item 1\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+
+        let slider = app.sliders["slider"]
+        slider.tap()
+        slider.swipeLeft()
+        slider.tap()
+
     }
 
     func testRecord() {

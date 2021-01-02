@@ -15,11 +15,6 @@ class ViewController: UIViewController {
 
         // optional - can hold a nil value
 
-        let prg = Program("")
-        prg.calculate()
-        prg.anotherString = "some value"
-
-
         var newVariable: Int? = 5
         newVariable = 10
 
