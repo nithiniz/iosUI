@@ -12,10 +12,9 @@ class NewClass {
     var applicationOne: String?
 
     func appTest(){
-
         print("1")
-        newFunction( completion: {
-            print("2")
+        newFunction {
+        print("2")
             // do something after completing the process in new Function method
             //self.process().testSiri()
 
@@ -43,9 +42,8 @@ class NewClass {
     }
 
     func process() -> Program {
-
-        print("3")
-        let program = Program("anusha")
+    print("3")
+        let program = Program("")
 
         // do something
 
@@ -54,13 +52,13 @@ class NewClass {
 }
 
 extension NewClass {
-    //lines: 14 -> 15 -> 16 ->  17 -> 38 -> 39 -> 40 -> 41 -> 42 -> 18 -> 19 -> 20 -> 25 -> 26 -> 27 --- 31 -> 20 -> Program class - comes back -> 21 -> 43
-    func newFunction(completion:()->()) {
 
+    func newFunction(_ completion:()->()) {
+        print(4.toString())
         // do something
         print("4")
         completion() // after the process call the passed function paramenter.
-        print("5")
+        print(5.toString())
     }
 }
 
@@ -77,6 +75,10 @@ extension Int {
     func toString() -> String {
 
         return "\(self)"
+    }
+    
+    func greaterThanTen() -> Bool {
+        return self > 10
     }
 }
 
