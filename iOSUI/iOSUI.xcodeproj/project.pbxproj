@@ -33,8 +33,6 @@
 		8B914E6B2598FADA00D3B669 /* klama22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E6A2598FADA00D3B669 /* klama22.swift */; };
 		8B914E84259A7ABE00D3B669 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		8B914E8C259D0BBB00D3B669 /* Seattle123.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E8B259D0BBB00D3B669 /* Seattle123.swift */; };
-		8B914E84259A7ABE00D3B669 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		8B914E9425A0EC8900D3B669 /* CreateConflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E9325A0EC8900D3B669 /* CreateConflict.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,7 +126,6 @@
 		8B87F3F22558519F00B59EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B914E6A2598FADA00D3B669 /* klama22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = klama22.swift; sourceTree = "<group>"; };
 		8B914E8B259D0BBB00D3B669 /* Seattle123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seattle123.swift; sourceTree = "<group>"; };
-		8B914E9325A0EC8900D3B669 /* CreateConflict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConflict.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +170,7 @@
 				599239FF25A751DC003EFF4A /* watchUI */,
 				59923A0E25A751E0003EFF4A /* watchUI Extension */,
 				5931A23F2558095300F3A73A /* Products */,
-				599239FB25A570C6003EFF4A /* Recovered References */,
+				8B914E9F25A0EEE500D3B669 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,7 +202,6 @@
 				8B914E6A2598FADA00D3B669 /* klama22.swift */,
 				8B914E8B259D0BBB00D3B669 /* Seattle123.swift */,
 				8862A66C259D2A9A005DFAEA /* AnushaLearning.swift */,
-				8B914E9325A0EC8900D3B669 /* CreateConflict.swift */,
 			);
 			path = iOSUI;
 			sourceTree = "<group>";
@@ -266,6 +262,13 @@
 			children = (
 			);
 			path = BikeTest;
+			sourceTree = "<group>";
+		};
+		8B914E9F25A0EEE500D3B669 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,8 +466,6 @@
 				8B914E8C259D0BBB00D3B669 /* Seattle123.swift in Sources */,
 				59A1552F259CEC2800565441 /* program.swift in Sources */,
 				5931A25825580B1400F3A73A /* SecondViewController.swift in Sources */,
-				5968BAA2255BC4ED0000BFA2 /* Program.swift in Sources */,
-				8B914E9425A0EC8900D3B669 /* CreateConflict.swift in Sources */,
 				8B914E6B2598FADA00D3B669 /* klama22.swift in Sources */,
 				5931A2462558095300F3A73A /* ViewController.swift in Sources */,
 				8B5AB99025622FDC000A4DEC /* NewClass.swift in Sources */,
@@ -839,6 +840,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZJ7X4VC9C;
 				INFOPLIST_FILE = SecondUITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,6 +860,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZJ7X4VC9C;
 				INFOPLIST_FILE = SecondUITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

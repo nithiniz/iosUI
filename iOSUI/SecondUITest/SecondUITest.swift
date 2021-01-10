@@ -107,23 +107,36 @@ class SecondUITest: XCTestCase {
         app.switches["switch"].tap()
     }
     
-    func testProgressView() {
-       // let app = XCUIApplication()
+//    func testProgressView() {
+//       // let app = XCUIApplication()
+//        app.launch()
+//        app/*@START_MENU_TOKEN@*/.staticTexts["Item 1"]/*[[".buttons[\"Item 1\"].staticTexts[\"Item 1\"]",".buttons[\"Button1\"].staticTexts[\"Item 1\"]",".staticTexts[\"Item 1\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//        let progressView = app.progressIndicators["progress"]
+//        XCTAssert(progressView.exists)
+//
+//        let slider = app.sliders["slider"]
+//        slider.tap()
+//
+//        slider.adjust(toNormalizedSliderPosition: 0.8)
+//
+//        sleep(2)
+//        let progressValue = progressView.value as? Float
+//        XCTAssert(app.staticTexts[ABC.file].exists)
+//
+//    }
+    
+    func test_buttons(){
+        let app = XCUIApplication()
         app.launch()
-        app/*@START_MENU_TOKEN@*/.staticTexts["Item 1"]/*[[".buttons[\"Item 1\"].staticTexts[\"Item 1\"]",".buttons[\"Button1\"].staticTexts[\"Item 1\"]",".staticTexts[\"Item 1\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        let progressView = app.progressIndicators["progress"]
-        XCTAssert(progressView.exists)
         
-        let slider = app.sliders["slider"]
-        slider.tap()
-       
-        slider.adjust(toNormalizedSliderPosition: 0.8)
+      //  app.buttons["Button1"].exists
+       XCTAssert(app.buttons["Button1"].exists)
+       XCTAssert(app.buttons["Button2"].exists)
+        app.buttons["Button1"].tap()
         
-        sleep(2)
-        let progressValue = progressView.value as? Float
-        XCTAssert(app.staticTexts[ABC.file].exists)
-
-    }
+       XCTAssert(app.buttons["switch"].exists)
+        
+}
     
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
