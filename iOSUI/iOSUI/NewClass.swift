@@ -11,6 +11,47 @@ class NewClass {
     var applicationOne: String?
     
     func appTest(){
-        
+        newFunction {
+
+            // do something after completing the process in new Function method
+            self.process().testSiri()
+        }
+    }
+
+    func process() -> Program {
+
+        let program = Program("")
+
+        // do something
+
+        return program
+    }
+
+}
+
+extension NewClass {
+
+    func newFunction(_ completion:()->()) {
+
+        // do something
+
+        completion() // after the process call the passed function paramenter.
     }
 }
+
+extension String {
+
+    func splitBy(_ splitChar: String) -> [String] {
+
+        return self.components(separatedBy: splitChar)
+    }
+}
+
+extension Int {
+
+    func toString() -> String {
+
+        return "\(self)"
+    }
+}
+

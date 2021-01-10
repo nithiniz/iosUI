@@ -15,8 +15,6 @@ class iOSUIUITests: XCTestCase {
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        let app = XCUIApplication()
-        app.launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
@@ -75,6 +73,7 @@ class iOSUIUITests: XCTestCase {
 
         XCTAssertLessThan(1, 2, "Test failed at this line")
         XCTAssert(1 < 2)
+        let url = NSURL(string: "prefs:root=Settings")
 
     }
 

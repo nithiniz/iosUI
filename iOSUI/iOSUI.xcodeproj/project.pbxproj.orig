@@ -20,17 +20,18 @@
 		8862A66D259D2A9A005DFAEA /* AnushaLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8862A66C259D2A9A005DFAEA /* AnushaLearning.swift */; };
 =======
 		59A15507259AF29D00565441 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A15506259AF29C00565441 /* File.swift */; };
+>>>>>>> Stashed changes
 		59A1551F259CCF2B00565441 /* iOSUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1551E259CCF2B00565441 /* iOSUIUITests.swift */; };
 		59A1552A259CCF8A00565441 /* CustomaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A15529259CCF8A00565441 /* CustomaTest.swift */; };
 		59A1552F259CEC2800565441 /* program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1552E259CEC2800565441 /* program.swift */; };
 		8875BBC02589C78E00638EFA /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875BBBF2589C78E00638EFA /* Testing.swift */; };
->>>>>>> Stashed changes
 		8B5AB99025622FDC000A4DEC /* NewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AB98F25622FDC000A4DEC /* NewClass.swift */; };
 		8B87F3F12558519F00B59EDF /* SecondUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87F3F02558519F00B59EDF /* SecondUITest.swift */; };
 		8B914E6B2598FADA00D3B669 /* klama22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E6A2598FADA00D3B669 /* klama22.swift */; };
 		8B914E84259A7ABE00D3B669 /* (null) in Sources */ = {isa = PBXBuildFile; };
 <<<<<<< Updated upstream
 		8B914E8C259D0BBB00D3B669 /* Seattle123.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B914E8B259D0BBB00D3B669 /* Seattle123.swift */; };
+		8B914E84259A7ABE00D3B669 /* (null) in Sources */ = {isa = PBXBuildFile; };
 =======
 >>>>>>> Stashed changes
 /* End PBXBuildFile section */
@@ -68,13 +69,13 @@
 		8862A66C259D2A9A005DFAEA /* AnushaLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnushaLearning.swift; sourceTree = "<group>"; };
 =======
 		59A15506259AF29C00565441 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		59A1551C259CCF2B00565441 /* iOSUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A1551E259CCF2B00565441 /* iOSUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUIUITests.swift; sourceTree = "<group>"; };
 		59A15520259CCF2B00565441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A15529259CCF8A00565441 /* CustomaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomaTest.swift; sourceTree = "<group>"; };
 		59A1552E259CEC2800565441 /* program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = program.swift; sourceTree = "<group>"; };
 		8875BBBF2589C78E00638EFA /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		8B5AB98F25622FDC000A4DEC /* NewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClass.swift; sourceTree = "<group>"; };
 		8B87F3EE2558519F00B59EDF /* SecondUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B87F3F02558519F00B59EDF /* SecondUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUITest.swift; sourceTree = "<group>"; };
@@ -310,9 +311,9 @@
 <<<<<<< Updated upstream
 				8B914E8C259D0BBB00D3B669 /* Seattle123.swift in Sources */,
 =======
+>>>>>>> Stashed changes
 				59A1552F259CEC2800565441 /* program.swift in Sources */,
 				8875BBC02589C78E00638EFA /* Testing.swift in Sources */,
->>>>>>> Stashed changes
 				5931A25825580B1400F3A73A /* SecondViewController.swift in Sources */,
 				8B914E6B2598FADA00D3B669 /* klama22.swift in Sources */,
 				5931A2462558095300F3A73A /* ViewController.swift in Sources */,
@@ -321,6 +322,15 @@
 				8B914E84259A7ABE00D3B669 /* (null) in Sources */,
 				5931A2442558095300F3A73A /* SceneDelegate.swift in Sources */,
 				8862A66D259D2A9A005DFAEA /* AnushaLearning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59A15518259CCF2B00565441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A1552A259CCF8A00565441 /* CustomaTest.swift in Sources */,
+				59A1551F259CCF2B00565441 /* iOSUIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
