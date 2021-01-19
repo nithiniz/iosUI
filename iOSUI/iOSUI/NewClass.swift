@@ -7,35 +7,60 @@
 //
 
 import Foundation
+
 class NewClass {
     var applicationOne: String?
-    
-    func appTest(){
-        newFunction {
 
+    func appTest(){
+
+        print("1")
+        newFunction( completion: {
+            print("2")
             // do something after completing the process in new Function method
-            self.process().testSiri()
-        }
+            //self.process().testSiri()
+
+            let abc = self.someValue().toString()
+            print(abc)
+
+            let app = self.process()
+            app.testSiri()
+        })
+
+        Klama22.aStaticFunc()
+
+        let klama22Object = Klama22()
+        klama22Object.variable2 = "january"
+
+        let klama22Object2 = Klama22()
+        klama22Object2.variable2 = "February"
+
+        klama22Object.updateVariable("")
+    }
+
+    func someValue() -> Int {
+
+        return 10
     }
 
     func process() -> Program {
 
-        let program = Program("")
+        print("3")
+        let program = Program("anusha")
 
         // do something
 
         return program
     }
-
 }
 
 extension NewClass {
-
-    func newFunction(_ completion:()->()) {
+    //lines: 14 -> 15 -> 16 ->  17 -> 38 -> 39 -> 40 -> 41 -> 42 -> 18 -> 19 -> 20 -> 25 -> 26 -> 27 --- 31 -> 20 -> Program class - comes back -> 21 -> 43
+    func newFunction(completion:()->()) {
 
         // do something
-
+        print("4")
         completion() // after the process call the passed function paramenter.
+        print("5")
     }
 }
 

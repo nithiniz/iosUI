@@ -101,7 +101,7 @@ class Program {
 //                               validate:(allOf: [WebSearchDucIDs.webSearchResponse]),
 //                               skipValidateSnippet(),
 //                               done())
-//
+
 //        TestCaseStartState.ask(self,
 //                               utterance: "nascar schedule",
 //                               validate:(allOf: ["webSearchDucs#webSearchResponse"]),
