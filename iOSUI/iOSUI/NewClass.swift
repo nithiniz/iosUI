@@ -24,7 +24,7 @@ class NewClass {
 
             let app = self.process()
             app.testSiri()
-        })
+        }
 
         Klama22.aStaticFunc()
 
