@@ -13,8 +13,9 @@ class NewClass {
 
     func appTest(){
         print("1")
-        newFunction {
-        print("2")
+        
+       newFunction {
+        //print("4")
             // do something after completing the process in new Function method
             //self.process().testSiri()
 
@@ -53,8 +54,8 @@ class NewClass {
 
 extension NewClass {
 
-    func newFunction(_ completion:()->()) {
-        print(4.toString())
+    func newFunction(_  completion:()->()) {
+        print(2.toString())
         // do something
         print("4")
         completion() // after the process call the passed function paramenter.
